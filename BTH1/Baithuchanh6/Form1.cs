@@ -10,22 +10,26 @@ namespace Baithuchanh6
 
         private void radTimeNewRoman_CheckedChanged(object sender, EventArgs e)
         {
-            rtbNhap.Font = new Font("Time New Roman", 16, FontStyle.Regular);
+            if(radTimeNewRoman.Checked)
+                rtbNhap.Font = new Font(radTimeNewRoman.Text, 16, FontStyle.Regular);
         }
 
         private void radArial_CheckedChanged(object sender, EventArgs e)
         {
-            rtbNhap.Font = new Font("Arial", 16, FontStyle.Regular);
+            if(radArial.Checked)
+                rtbNhap.Font = new Font(radArial.Text, 16, FontStyle.Regular);
         }
 
         private void radTahoma_CheckedChanged(object sender, EventArgs e)
         {
-            rtbNhap.Font = new Font("Tahoma", 16, FontStyle.Regular);
+            if(radTahoma.Checked)
+            rtbNhap.Font = new Font(radTahoma.Text, 16, FontStyle.Regular);
         }
 
         private void radCourierNew_CheckedChanged(object sender, EventArgs e)
         {
-            rtbNhap.Font = new Font("Couner New", 16, FontStyle.Regular);
+            if(radCourierNew.Checked)
+                rtbNhap.Font = new Font(radCourierNew.Text, 16, FontStyle.Regular);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
